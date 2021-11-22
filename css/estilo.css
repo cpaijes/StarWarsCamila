@@ -497,7 +497,7 @@ footer .contenidoFooter .redesSociales li a:hover {
   transition: all .75s ease;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 416px) {
   /*header*/
   header {
     height: 4rem;
