@@ -21,7 +21,7 @@ $textos:'Roboto', sans-serif;
    header{
         @include sizes(4rem, 420px);
         .menu{
-            @include sizes(2.3rem, 414px);
+            @include sizes(2.3rem, 420px);
             li{
                 a{
                     padding: 4px;
