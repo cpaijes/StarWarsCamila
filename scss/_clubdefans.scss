@@ -1,0 +1,52 @@
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+    
+}
+@mixin sizes($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+#mainClubFans{
+    h1{
+        font-family: $titulos;
+        font-weight: bolder;
+        font-size: 4rem ;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+    }
+    h2{
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: $textos;
+        }
+    .formularioClubFans{
+        font-family: $textos;
+        margin: 2%;
+        padding: 2%;
+        border: 5px solid $amarillo;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        .casillerosFormulario{
+            padding: 1.5%;
+            font-family: $textos;
+            color: $negro;
+            font-weight: bolder;
+        }
+        .imagenR2D2{
+                @include sizes(15rem, auto)
+        }
+    }
+
+}

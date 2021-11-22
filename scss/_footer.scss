@@ -1,0 +1,57 @@
+
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+    
+}
+@mixin sizes($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+
+footer{
+    background-color: $negro;
+    @include sizes(auto, 100vw);
+    padding-top: 40px;
+    color: $blanco;
+    .contenidoFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .redesSociales{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+                padding-left: 6rem;
+                padding-right:10rem;
+                padding-top: 1rem;
+                padding-bottom: 1.5rem;
+                a{
+                    text-decoration: none;
+                    color: $blanco;
+                    i{
+                        font-size: 2rem;
+                    }
+                    &:hover{
+                        color: $amarillo;
+                        transition: all .75s ease;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,60 @@
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+    
+}
+@mixin sizes($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+#mainPersonajes{
+    h1{
+        font-family: $titulos;
+        font-weight: bolder;
+        font-size: 4rem ;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+    }
+    h2{
+        color:$amarillo;
+        font-family: $titulos;
+        font-size: 3rem;
+        text-align: center;
+    }
+    #personajes{
+        display: flex;
+        flex-wrap: nowrap;
+        #imagenesPersonajes{
+            @include sizes(auto, 250px);
+            border: 5px solid $amarillo;
+            border-radius: 100%;
+            @include margin(10%, 2% )
+        }
+        #botCaracteristicas{
+            background-color: $amarillo;
+            @include sizes(auto, 200px);
+            font-size: 18px;
+            margin-top: 3%;
+        }
+        #listaCaracteristicas{
+            font-family: $textos;
+            @include sizes(auto, 70%);
+            padding-left: 5%;
+            padding-right: 5%;
+            vertical-align:super;
+            text-align: justify;
+            padding-top: 1%;
+            padding-bottom: 2%;
+            font-size: 12px;
+        }
+    }
+ }

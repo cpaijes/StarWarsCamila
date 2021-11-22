@@ -1,0 +1,55 @@
+
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+#tablaSaga{
+    #tituloSaga{
+        color: black;
+        font-family: $titulos;
+        font-size: 2rem;
+        text-align: center;
+    }
+    #paresSaga{
+        background-color: #dba80d50;
+        #imagenesSaga{
+            @include sizes(150px, auto);
+        }
+
+        .textoSaga{
+            font-size: 13px;
+            text-align: center;
+            font-family: $textos;
+        }
+        .textoAñoNombre{
+            font-size: 16px;
+            text-align: center;
+            font-family: $textos;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+    
+    }
+    #imparesSaga{
+        background-color: none;
+        #imagenesSaga{
+            @include sizes(150px, auto);
+        }
+        .textoSaga{
+            font-size: 13px;
+            text-align: center;
+            font-family: $textos;
+        }
+        .textoAñoNombre{
+            font-size: 16px;
+            text-align: center;
+            font-family: $textos;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+    }
+}

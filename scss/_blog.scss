@@ -1,0 +1,127 @@
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+    
+}
+@mixin sizes($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+
+#mainBlog{
+    h1{
+        font-family: $titulos;
+        font-weight: bolder;
+        font-size: 4rem ;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+    }
+    .subtituloBlog{
+        color: $amarillo;
+        font-family:$titulos;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+.blogStarWarsImpares{
+    border: 5px solid $amarillo;
+    background-color: $blancotrans;
+    @include margin(5%, 5%);
+    background-position: center;
+    .titulosSeccionesBlog{
+        color: $negro;
+        font-family: $titulos;
+        font-size: 200%;
+        padding-left: 2%;
+    }
+    .contenidoBlogImpares{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .imagenesBlog{
+            @include sizes(auto, 400px);
+            padding-left:2%;
+            padding-right: 2%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        .textosBlog{
+            font-family: $textos;
+            @include sizes(80%, auto);
+            padding-left: 2%;
+            padding-right: 2%;
+            vertical-align:super;
+            text-align: justify;
+            padding-top: 1%;
+            padding-bottom: 2%;
+            font-size: 14px;
+            .trailerVisions{
+                text-decoration: none;
+                color: $amarillo;
+            }
+        }
+    }
+}
+
+.blogStarWarsPares{
+    border: 5px solid $blancotrans;
+    background-color: $amarillo;
+    @include margin(5%, 5%);
+    background-position: center;
+    .titulosSeccionesBlog{
+        color: $negro;
+        font-family: $titulos;
+        font-size: 200%;
+        padding-left: 2%;
+    }
+    .contenidoBlogPares{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        .imagenesBlog{
+            @include sizes(auto, 400px);
+            padding-left:2%;
+            padding-right: 2%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        .textosBlog{
+            font-family: $textos;
+            @include sizes(80%, auto);
+            padding-left: 2%;
+            padding-right: 2%;
+            vertical-align:super;
+            text-align: justify;
+            padding-top: 1%;
+            padding-bottom: 2%;
+            font-size: 14px;
+
+            .linksPares{
+            text-decoration: none;
+            color:$blanco ;
+            }
+
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+

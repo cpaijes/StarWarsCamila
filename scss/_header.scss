@@ -1,0 +1,69 @@
+
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+    
+}
+@mixin sizes($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+header{
+    background-color: $negro;
+    position:fixed;
+    @include sizes(10.2rem, 100%);
+    z-index: 100;
+    
+    .logoStarWars{
+        margin:auto;
+        display:block;
+        width: 12%;
+    }
+    .menu{
+        list-style-type: none;
+        background-color: $blancotrans;
+        padding: 0;
+        @include sizes(5.05rem,100%);
+        margin: auto;
+        display: inline-block;
+        text-align: center; 
+        z-index: 100;
+        li{
+            text-align: center;
+            display: inline-block;
+
+            a{
+                color: $negro;
+                text-decoration: none;
+                display: inline-block;
+                padding: 20px;
+                font-family: $titulos; 
+                font-size: 23px;
+                z-index: 100;
+                &:hover{
+                    background-color: $amarillo;
+                    color: rgb(92, 92, 92);
+                    transform: scale(1.2, 1.2);
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

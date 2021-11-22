@@ -1,0 +1,39 @@
+
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+    
+}
+@mixin sizes($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+main{
+    h1{
+        font-family: $titulos;
+        font-weight: bolder;
+        font-size: 4rem ;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+    }
+    color: $negro;
+    background-color: $blancotrans;
+    background-position: center;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    @include margin(5%, 5%);
+}
+

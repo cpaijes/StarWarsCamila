@@ -1,0 +1,28 @@
+@import "index";
+@import "header";
+@import "main";
+@import "saga";
+@import "blog";
+@import "personajes";
+@import "clubdefans";
+@import "footer";
+@import "mediaqueries";
+
+
+$titulos:'Oswald', sans-serif;
+$textos:'Roboto', sans-serif;
+
+$amarillo:#dba90d;
+$blancotrans:#dfdbdbbb;
+$blanco:#dfdbdb;
+$negro: black;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_1280.png);
+}
