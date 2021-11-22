@@ -16,7 +16,7 @@ $textos:'Roboto', sans-serif;
     width: $ancho;
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 415px){
     /*header*/ 
    header{
         @include sizes(4rem, 375px);
