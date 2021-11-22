@@ -1,4 +1,4 @@
-# StarWarsCAMILAPAIJES
+# StarWarsCamila
 SOBRE MI...
 - Mi nombre es Camila Paijés, soy argentina y tengo 19 años.
 
