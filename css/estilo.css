@@ -501,11 +501,11 @@ footer .contenidoFooter .redesSociales li a:hover {
   /*header*/
   header {
     height: 4rem;
-    width: 375px;
+    width: 414px;
   }
   header .menu {
-    height: 2.5rem;
-    width: 375px;
+    height: 2.3rem;
+    width: 414px;
   }
   header .menu li a {
     padding: 4px;
@@ -666,7 +666,7 @@ footer .contenidoFooter .redesSociales li a:hover {
   footer {
     margin: 0;
     height: auto;
-    width: 375px;
+    width: 414px;
   }
   footer .contenidoFooter .redesSociales li {
     padding-left: 0.5rem;
