@@ -610,24 +610,40 @@ footer .contenidoFooter .redesSociales li a:hover {
     font-size: 1rem;
   }
   .blogStarWarsImpares .titulosSeccionesBlog {
-    font-size: 50%;
+    font-size: 75%;
+  }
+  .blogStarWarsImpares .contenidoBlogImpares {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .blogStarWarsImpares .contenidoBlogImpares .imagenesBlog {
     height: auto;
-    width: 100px;
+    width: 250px;
+    display: block;
+    margin: auto;
   }
   .blogStarWarsImpares .contenidoBlogImpares .textosBlog {
-    font-size: 6px;
+    font-size: 8px;
   }
   .blogStarWarsPares .titulosSeccionesBlog {
-    font-size: 50%;
+    font-size: 75%;
+  }
+  .blogStarWarsPares .contenidoBlogPares {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .blogStarWarsPares .contenidoBlogPares .imagenesBlog {
     height: auto;
-    width: 100px;
+    width: 250px;
+    display: block;
+    margin: auto;
   }
   .blogStarWarsPares .contenidoBlogPares .textosBlog {
-    font-size: 6px;
+    font-size: 8px;
   }
   /*club de fans*/
   #mainClubFans {

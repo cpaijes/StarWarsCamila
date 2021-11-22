@@ -135,27 +135,33 @@ $textos:'Roboto', sans-serif;
     }
     .blogStarWarsImpares{
         .titulosSeccionesBlog{
-            font-size: 50%;
+            font-size: 75%;
         }
         .contenidoBlogImpares{
+            flex-direction:column;
             .imagenesBlog{
-                @include sizes(auto, 100px )
+                @include sizes(auto, 250px);
+                display:block;
+                margin:auto;
             }
             .textosBlog{
-                font-size: 6px;
+                font-size: 8px;
             }
         }
     }
     .blogStarWarsPares{
         .titulosSeccionesBlog{
-            font-size: 50%;
+            font-size: 75%;
         }
         .contenidoBlogPares{
+            flex-direction: column;
             .imagenesBlog{
-                @include sizes(auto, 100px)
+                @include sizes(auto, 250px);
+                display:block;
+                margin:auto;
             }
             .textosBlog{
-                font-size: 6px;
+                font-size: 8px;
             }
         }
     }
