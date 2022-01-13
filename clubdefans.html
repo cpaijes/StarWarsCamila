@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/estilo.css">
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +68,17 @@
         
         <main id="mainClubFans">
             <h1>CLUB DE FANS</h1>
-                <fieldset class="formularioClubFans">
+                <div class="container py-2">
+                    <p class="lead">Ingrese su nombre</p>
+                    <form>
+                        <input id = "nombre" type="text" placeholder="Ingresa tu nombre" class="form-control my-2">
+                        <input id = "edad" type="text" placeholder="Ingresa tu edad" class="form-control my-2">
+                        <input id = "email" type="text" placeholder="Ingresa tu email" class="form-control my-2">
+                        <button id="boton" class="btn btn-success" type="reset" oneclick="capturar();">Agregar</button>
+                    </form>
+
+                </div>
+                <!--<fieldset class="formularioClubFans">
                     <section>
                         <form action="#"></form>
                             <h2>Unite!</h2>
@@ -95,14 +106,14 @@
                                 </div>
                                 <div class="casillerosFormulario">
                                     
-                                    <input value="Enviar"type="submit" name="boton" style="background-color:#dba90d;">
+                                    <input value="Enviar"type="submit" name="boton" style="background-color:#dba90d" oneclick="capturar();">
                                 </div>
-                    </section>
+                    </section> 
 
                     <div>
                         <img class="imagenR2D2"src="Imágenes/r2d2.png" alt="r2d2">
                     </div>
-            </fieldset>
+            </fieldset>-->
 
             
     </main>
@@ -121,6 +132,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    
+
+    <script src="/js/clubdefans.js">
+        
+    </script>
+
+   
 </body>
 </html>
