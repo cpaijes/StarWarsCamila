@@ -26,14 +26,13 @@ alert (personajes.sort())
 
 const form = document.getElementById("formulario")
 
-formulario.addEventListener("submit", function(){
-    let nombreUsuario = document.getElementById("nombre").value
-    console.log(nombreUsuario)
-
-    let edadUsuario = document.getElementById("edad").value
-    console.log(edadUsuario)
+formulario.addEventListener("submit", datosFormulario);
 
 
-    let emailUsuario = document.getElementById("email").value
-    console.log(emailUsuario)
-})
+function datosFormulario(){
+    let nombreUsuario = document.getElementById("nombre").value;
+    let edadUsuario = document.getElementById("edad").value;
+    let emailUsuario = document.getElementById("email").value;
+    let miembro1 = new Miembro (nombre, edad, email);
+    console.log (miembto1);
+}
