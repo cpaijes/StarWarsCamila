@@ -1,5 +1,3 @@
-
-
 class Miembro {
     constructor(nombre, edad, email){
         this.nombre= nombre;
@@ -9,40 +7,23 @@ class Miembro {
 }
 
 
-//let nombre = prompt("Ingrese su nombre");
-//let edad = prompt("Ingrese su edad");
-//let email = prompt("Ingrese su email"); 
-
-//var miembro1 = new Miembro (nombre, edad, email);
-//console.log (miembro1);
-
-//alert ("Bienvenido, " + nombre + "al club de fans de Star Wars!")
-
-//let personajePrimero = prompt("Ingrese su personaje favorito");
-//let personajeSegundo = prompt("Ingrese su segundo personaje favorito");
-//let personajeTercero = prompt ("Ingrese su tercer personaje favorito");
-
-//var personajes = [personajePrimero, personajeSegundo, personajeTercero];
-
-//alert (personajes.sort())
-
-//let form = document.getElementById("formulario");
-//form.addEventListener("submit", function(e){
-   // e.preventDefault();
-//});
-
 let boton = document.getElementById("botonFormulario");
-boton.addEventListener("click", cargarMiembro);
+boton.addEventListener("click", datosFormulario);
 
 
 function datosFormulario(){
     let nombreUsuario = document.getElementById("nombre").value;
     let edadUsuario = document.getElementById("edad").value;
     let emailUsuario = document.getElementById("email").value;
-    let miembro1 = new Miembro (nombre, edad, email);
-    console.log (miembro1);
+    let miembro1 = new Miembro (nombreUsuario, edadUsuario, emailUsuario);
     mostrarMiembro(miembro1);
+    guardarDatos(Miembro);
 }
+
+function guardarDatos (Miembro){
+    localStorage.setItem("Miembros", JSON.stringify(Miembro))
+}
+
 
 function mostrarMiembro (miembro) {
     let form = document.getElementById("formulario");
@@ -50,7 +31,7 @@ function mostrarMiembro (miembro) {
 
     let saludoMiembro  = document.createElement("div");
     saludoMiembro.className = "saludoMiembro";
-    saludoMiembro.innerHTML = `Gracias ${miembro.nombre} por suscribirte al club de fans! Recibirás novedad a través de ${miembro.cliente}`;
+    saludoMiembro.innerHTML = `Gracias ${miembro.nombre} por suscribirte al club de fans! Recibirás novedad a través de ${miembro.email}`;
 
     formulario.appendChild(saludoMiembro);
 
