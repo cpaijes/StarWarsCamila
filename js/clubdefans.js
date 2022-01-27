@@ -17,7 +17,7 @@ function datosFormulario(){
     let emailUsuario = document.getElementById("email").value;
     let miembro1 = new Miembro (nombreUsuario, edadUsuario, emailUsuario);
     mostrarMiembro(miembro1);
-    guardarDatos(Miembro);
+    guardarDatos(miembro1);
 }
 
 function guardarDatos (Miembro){
