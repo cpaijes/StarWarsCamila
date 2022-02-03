@@ -33,7 +33,25 @@ $textos:'Roboto', sans-serif;
     #personajes{
         display: flex;
         flex-wrap: nowrap;
-        #imagenesPersonajes{
+        #imagenDarth{
+            @include sizes(auto, 250px);
+            border: 5px solid $amarillo;
+            border-radius: 100%;
+            @include margin(10%, 2% )
+        }
+        #imagenLuke{
+            @include sizes(auto, 250px);
+            border: 5px solid $amarillo;
+            border-radius: 100%;
+            @include margin(10%, 2% )
+        }
+        #imagenYoda{
+            @include sizes(auto, 250px);
+            border: 5px solid $amarillo;
+            border-radius: 100%;
+            @include margin(10%, 2% )
+        }
+        #imagenLeia{
             @include sizes(auto, 250px);
             border: 5px solid $amarillo;
             border-radius: 100%;
